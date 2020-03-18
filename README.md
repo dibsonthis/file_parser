@@ -1,4 +1,5 @@
-# file_parser
+# Basic File Parser CLI
+
 CLI for basic file/folder handling
 
         -c or create: creates files // -c hello world.py, goodbye world.py
