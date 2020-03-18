@@ -5,6 +5,8 @@ class FileParser:
 
             'create': self.create,
             '-c': self.create,
+            'createf': self.create_folder,
+            '-cf': self.create_folder,
             'delete': self.delete,
             '-d': self.delete,
             'rename': self.rename,
@@ -19,7 +21,17 @@ class FileParser:
             '-h'   : self.help
         }
 
+    def create_folder(self, filepath, print_action=True):
+        import os
+        if not os.path.isdir(filepath):
+            os.makedirs(filepath)
+            print(f'created {filepath}\n')
+        else:
+            print(f'{filepath} already exists\n')
+            return
+
     def create(self, filepath, print_action=True):
+        
         try:
             with open(filepath,'r',errors='ignore') as file:
                 pass
@@ -33,9 +45,12 @@ class FileParser:
 
     def delete(self, filepath, print_action=True):
         import os
-        try:
+        import shutil
+        if os.path.isfile(filepath):
             os.remove(filepath)
-        except FileNotFoundError:
+        elif os.path.isdir(filepath):
+            shutil.rmtree(filepath)
+        else:
             print(f'{filepath} does not exist\n')
             return
         if print_action:

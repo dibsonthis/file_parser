@@ -3,8 +3,10 @@
 CLI for basic file/folder handling
 
 <code>**-c or create:** creates files // -c hello world.py, goodbye world.py</code>
+
+<code>**-cf or createf:** creates folders // -c hello world.py, goodbye world.py</code>
         
-<code>**-d or delete:** deletes files // -d hello world.py, goodbye world.py</code>
+<code>**-d or delete:** deletes files or folders // -d hello world.py, goodbye world.py</code>
         
 <code>**-re or rename:** renames files // -re hello world.py [await input] new_file_name.py</code>
         
