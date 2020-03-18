@@ -2,16 +2,16 @@
 
 CLI for basic file/folder handling
 
-        -c or create: creates files // -c hello world.py, goodbye world.py
+<code>**-c or create:** creates files // -c hello world.py, goodbye world.py</code>
         
-        -d or delete: deletes files // -d hello world.py, goodbye world.py
+<code>**-d or delete:** deletes files // -d hello world.py, goodbye world.py</code>
         
-        -re or rename: renames files // -re hello world.py [await input] new_file_name.py
+<code>**-re or rename:** renames files // -re hello world.py [await input] new_file_name.py</code>
         
-        -co or copy: copies files into other files // -co hello world.py [await input] hello world copy.py
+<code>**-co or copy:** copies files into other files // -co hello world.py [await input] hello world copy.py</code>
         
-        -pk or peek: prints contents of files or folders // -pk C://Desktop, C://Desktop/New Folder/file.txt
+<code>**-pk or peek:** prints contents of files or folders // -pk C://Desktop, C://Desktop/New Folder/file.txt</code>
         
-        -ex or exit: exits file parser CLI
+<code>**-ex or exit:** exits file parser CLI</code>
         
-        -h or help: show commands
+<code>**-h or help:** show list of commands</code>
