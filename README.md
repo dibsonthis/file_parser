@@ -4,7 +4,7 @@ CLI for basic file/folder handling
 
 <code>**-c or create:** creates files // -c hello world.py, goodbye world.py</code>
 
-<code>**-cf or createf:** creates folders // -c hello world.py, goodbye world.py</code>
+<code>**-cf or createf:** creates folders // -cf new folder 1, new folder 2</code>
         
 <code>**-d or delete:** deletes files or folders // -d hello world.py, goodbye world.py</code>
         
